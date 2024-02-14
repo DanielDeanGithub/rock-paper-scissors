@@ -37,3 +37,11 @@ const determineWinner = (userChoice, computerChoice) => {
         return computerChoice === 'paper' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
     }
 };
+
+const playGame = () => {
+    const userChoice = getUserChoice('rock');
+    const computerChoice = getComputerChoice();
+    console.log(`User: ${userChoice}. Computer: ${computerChoice}`);
+
+    
+}
