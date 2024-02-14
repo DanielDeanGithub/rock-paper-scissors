@@ -14,10 +14,15 @@ const getComputerChoice = () => {
             return 'rock';
             break;
         case 1:
-            return 'paper'
+            return 'paper';
             break
         default:
-            return 'scissors'
+            return 'scissors';
             break;
     }
-}
+};
+
+const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) return 'The game was a tie.';
+    
+};
