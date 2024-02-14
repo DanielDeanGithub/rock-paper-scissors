@@ -32,4 +32,8 @@ const determineWinner = (userChoice, computerChoice) => {
     if (userChoice === 'paper') {
         return computerChoice === 'rock' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
     }
+
+    if (userChoice === 'scissors') {
+        return computerChoice === 'paper' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
+    }
 };
