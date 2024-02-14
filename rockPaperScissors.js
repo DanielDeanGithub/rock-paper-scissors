@@ -42,6 +42,7 @@ const playGame = () => {
     const userChoice = getUserChoice('rock');
     const computerChoice = getComputerChoice();
     console.log(`User: ${userChoice}. Computer: ${computerChoice}`);
+    console.log(determineWinner(userChoice, computerChoice));
+};
 
-    
-}
+playGame();
