@@ -42,11 +42,11 @@ const determineWinner = (userChoice, computerChoice) => {
     }
 };
 
-const playGame = () => {
-    const userChoice = getUserChoice('rock');
+const playGame = (input) => {
+    const userChoice = getUserChoice(input);
     const computerChoice = getComputerChoice();
     console.log(`User: ${userChoice}. Computer: ${computerChoice}`);
     console.log(determineWinner(userChoice, computerChoice));
 };
 
-playGame();
+playGame('rock');
