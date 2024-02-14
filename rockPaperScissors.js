@@ -25,4 +25,8 @@ const getComputerChoice = () => {
 const determineWinner = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) return 'The game was a tie.';
     
+    if (userChoice === 'rock') {
+        return computerChoice === 'scissors' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
+    }
+
 };
