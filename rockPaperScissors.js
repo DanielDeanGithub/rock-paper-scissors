@@ -2,7 +2,7 @@ console.log('hi');
 
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
-    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') return userInput;
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') return userInput;
     console.log('Error: Invaild choice.')
 };
 
@@ -35,6 +35,10 @@ const determineWinner = (userChoice, computerChoice) => {
 
     if (userChoice === 'scissors') {
         return computerChoice === 'paper' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
+    }
+
+    if (userChoice === 'bomb') {
+        return 'Congratulations - You win!'
     }
 };
 
