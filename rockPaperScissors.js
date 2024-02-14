@@ -25,21 +25,13 @@ const getComputerChoice = () => {
 const determineWinner = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) return 'The game was a tie.';
     
-    if (userChoice === 'rock') {
-        return computerChoice === 'scissors' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
-    }
+    if (userChoice === 'rock') return computerChoice === 'scissors' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
 
-    if (userChoice === 'paper') {
-        return computerChoice === 'rock' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
-    }
+    if (userChoice === 'paper') return computerChoice === 'rock' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
 
-    if (userChoice === 'scissors') {
-        return computerChoice === 'paper' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
-    }
+    if (userChoice === 'scissors') return computerChoice === 'paper' ? 'Congratulations - You win!' : 'You Lose - Better luck next time!';
 
-    if (userChoice === 'bomb') {
-        return 'Congratulations - You win!'
-    }
+    if (userChoice === 'bomb') return 'Congratulations - You win!'
 };
 
 const playGame = (input) => {
